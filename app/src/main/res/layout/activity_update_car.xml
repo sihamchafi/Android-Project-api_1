@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Name"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Price"
+        android:layout_below="@id/editTextName"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editTextImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Image URL"
+        android:layout_below="@id/editTextPrice"
+        android:padding="12dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxFullOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Options"
+        android:layout_below="@id/editTextImageUrl" />
+
+    <Button
+        android:id="@+id/buttonUpdateCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Car"
+        android:layout_below="@id/checkboxFullOption"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/buttonDeleteCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Car"
+        android:layout_below="@id/buttonUpdateCar"
+        android:padding="12dp" />
+
+</RelativeLayout>
